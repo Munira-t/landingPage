@@ -50,7 +50,7 @@ function isInViewport(e) {
 const init = () => {
   bulidNavItem(); //create and bulid navigation.
   scrollToLink(); // scroll to target section.
-  AOS.init(); // Aos collapsible effects for sections
+  AOS.init(); // Aos scroll animation for sections.
 }
 
 // Add class 'active' to section when near top of viewport
@@ -69,7 +69,7 @@ const bulidNavItem = () => {
 
   // set firstLink as true before entring the loop to apply it to the first link. 
   let firstLink = true;
-  var fragment = document.createDocumentFragment();
+  let fragment = document.createDocumentFragment();
 
   //looping throug all sections.
   sections.forEach(section => {
@@ -142,13 +142,13 @@ const toggleActive = () => {
     for (let section of sections) {
       // returen boolean value from isInViewport
       const onScreen = isInViewport(section);
-      // if the section is in the view port add active class to current section
+      const sectionId = section.id;
+      // if the section is in the view port add active class to current section and active link to navlink
       if (onScreen) {
-        section.classList.add('your-active-class');
-        // link.classList.add('active');
-      } else {
         section.classList.remove('your-active-class');
-        // link.classList.remove('active');
+        section.classList.add('your-active-class');
+        document.querySelector('.link__active')?.classList.remove('link__active');
+        document.querySelector(`[href="#${sectionId}"]`).classList.add('link__active');
       }
     }
   });
