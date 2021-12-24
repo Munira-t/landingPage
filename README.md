@@ -14,6 +14,9 @@ This project aims to practice JavaScript ES6 and manipulate the DOM such as buil
 - When clicking an item from the navigation menu, the link will scroll to the appropriate section.
 
 ## Demo 
+![](https://github.com/Munira-t/landingPage/blob/main/Demo-Landpage.gif)
+
+
 [Landing page demo](https://landingpage-m.pages.dev/)
 ## Acknowledgements
 
