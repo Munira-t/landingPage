@@ -13,6 +13,8 @@ This project aims to practice JavaScript ES6 and manipulate the DOM such as buil
 - If the user scroll through the page it's shows which section is being viewed.
 - When clicking an item from the navigation menu, the link will scroll to the appropriate section.
 
+## Demo 
+[Landing page demo](https://landingpage-m.pages.dev/)
 ## Acknowledgements
 
 - [Help function to check if an element is visible in the viewport](https://www.javascripttutorial.net/dom/css/check-if-an-element-is-visible-in-the-viewport/)
